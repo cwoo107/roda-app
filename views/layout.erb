@@ -52,8 +52,30 @@
     <div id="content" class="container">
       <%= yield %>
     </div>
-    <div class='container-fluid navbar-inverse' style='color:white;'>
+    <div class='container-fluid navbar-inverse text-center' style='color:white;'>
     &nbsp; <p />
+        <div class='row'>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4" style='filter: invert(100%);'>
+                <a href='https://github.com/cwoo107'><img src="/images/GitHub.png" width="40" /></a> &nbsp;
+                <a href='https://www.linkedin.com/in/caleb-woods-9041aa137'><img src="/images/linkedin-brands.svg" width="40" /></a> &nbsp;
+                <a href='https://www.facebook.com/caleb.woods.106'><img src="/images/facebook-square-brands.svg" width="40" /></a> &nbsp;
+                <a href='https://www.instagram.com/calebwoods92/'><img src="/images/instagram-brands.svg" width="40" /></a> 
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4'>
+            </div>
+            <div class='col-md-4'>
+                <ul class="nav navbar-nav" style="display: inline-block !important; float: none !important;">
+                    <li><a href='/myWork'>My Work</a></li>
+                    <li><a href='/skills'>Skills</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     &nbsp; <p />
     &nbsp; <p />
     </div>
@@ -63,17 +85,23 @@
 </html>
 
 <style>
+body{
+    color: #303030;
+}
+.navbar-inverse {
+    background-image: linear-gradient(to bottom right, #383838, #181818);
+}
 p {
     font-family: Avenir, Helvetica Neue, Helvetica, sans-serif ;
 }
 h3 > a {
   position: relative;
-  color: #000;
+  color: #303030;
   text-decoration: none !important;
 }
 
 h3 > a:hover {
-  color: #000;
+  color: #303030;
 }
 h3 > a:before {
   content: "";
@@ -82,7 +110,7 @@ h3 > a:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #303030;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
