@@ -6,7 +6,7 @@
         </div>
         <div class='col-md-8'>
             <div class='card' style="width:100%">
-                <h2 id="Title" class='card-title'>USA North 811</h2>
+                <h2 id="Title" class='card-title' >USA North 811</h2>
                 <div class='container'>
                     <div class='row'>
                         <div class="col-md-8">
@@ -20,35 +20,49 @@
                         <div class='col-md-1'>
                         </div>
                         <div class='col-md-7'>
-                            <h3>Member Portal</h3>
+                            <h3 data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            Member Portal &nbsp;<img src="/images/chevron-down-solid.svg" width="15px" />
+                            </h3>
                         </div>
                     </div>
-                    <div class='row'>
+                    
+
+                    <div class="row collapse" id="collapse1">
                         <div class='col-md-1'>
                         </div>
-                        <div class='col-md-7'>
+                        <div class='col-md-7' >
                             <p>The success of an 811 center is highly dependent on having good information from the participating Utility Owners. 
                             The Member Portal is a web application I developed that allows USA North's 
                             over 1,600 utility members to manage their account profiles themselves, 
                             guaranteeing excavators have the most up to date information. Prior to this application, 
                             this information was collected through a series of online forms that submitted the information via 
-                            email and was then manually entered into the system by an operator. Prior to the launch of this application, 
+                            email and was then manually entered into the system by an operator. Before we launched this application, 
                             it had taken the staff the first 8 months of the year to update less than 5% of their data according to their metrics. 
-                            Within two weeks of launching the application, it had already surpased their year to date total. 
+                            Within two weeks of going live with the application, it had already surpased their year to date total. 
                             The application is mostly built with Ruby on Rails with Postgresql, 
                             using Devise for authentication. It is currently running on Heroku</p>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='col-md-1'>
+                        </div>
+                        <div class="col-md-7">
                             <a href="https://github.com/cwoo107/members_portal"><img width="25px" src="/images/GitHub.png" /></a> &nbsp; 
                             <img width="25px" src="/images/ruby.png" />
                         </div>
                     </div>
+                    &nbsp;
                     <div class='row'>
                         <div class='col-md-1'>
                         </div>
                         <div class='col-md-7'>
-                            <h3>Wallboard</h3>
+                            <h3 data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Wallboard &nbsp;<img src="/images/chevron-down-solid.svg" width="15px" />
+                            </h3>
                         </div>
                     </div>
-                    <div class='row'>
+                    <div class='row collapse' id="collapse2">
                         <div class='col-md-1'>
                         </div>
                         <div class='col-md-7'>
@@ -56,18 +70,28 @@
                             For USA North, I built a rotating wallboard to display some of their key metrics. 
                             The data updates automatically, making sure it always has the most current information.
                             This wallboard is made to be on display on their call center floor, easily within view of the staff</p>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='col-md-1'>
+                        </div>
+                        <div class="col-md-7">
                             <a href="https://github.com/cwoo107/live_data"><img width="25px" src="/images/GitHub.png" /></a> &nbsp; 
                             <img width="40px" src="/images/vue-logo.png" />
                         </div>
                     </div>
+                    &nbsp;
                     <div class='row'>
                         <div class='col-md-1'>
                         </div>
                         <div class='col-md-7'>
-                            <h3>API</h3>
+                        <h3 data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            API &nbsp;<img src="/images/chevron-down-solid.svg" width="15px" />
+                            </h3>
                         </div>
                     </div>
-                    <div class='row'>
+                    <div class='row collapse' id="collapse3">
                         <div class='col-md-1'>
                         </div>
                         <div class='col-md-7'>
@@ -76,10 +100,18 @@
                             The project is ongoing as new needs constantly arise, and, by using Go, I can quickly add new functions as needed. 
                             The program itself is set up behind an Elastic Load Balancer on AWS, using Elastic Beanstalk for quick and efficient 
                             automatic deploys with each push.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='col-md-1'>
+                        </div>
+                        <div class="col-md-7">
                             <a href="https://github.com/cwoo107/portal_api"><img width="25px" src="/images/GitHub.png" /></a> &nbsp; 
                             <img width="55px" src="/images/Go-Logo_Blue.png" />
                         </div>
                     </div>
+                    &nbsp;
                 </div>
             </div>
         </div>
