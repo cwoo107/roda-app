@@ -9,6 +9,9 @@ class Myapp < Roda
     r.root do
         view("home")
     end
+    r.get "myWork" do
+        view("myWork")
+    end
     r.get "about" do
         view("about")
     end
