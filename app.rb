@@ -12,6 +12,9 @@ class Myapp < Roda
     r.get "myWork" do
         view("myWork")
     end
+    r.get "skills" do
+        view("skills")
+    end
     r.get "about" do
         view("about")
     end
