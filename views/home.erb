@@ -4,27 +4,19 @@
 &nbsp; <p />
 &nbsp; <p />
 
-<div class="row">
-    <div class='col-md-1'>
-    </div>
-    <div class='col-md-10 text-center'>
-    <h1 class="ml1">
-        <span class="text-wrapper">
-         <span class="letters">Web Development</span>
-        </span>
-    </h1>
-    </div>
-</div>
+
 <div class='row'>
     <div class='col-md-4'>
     </div>
     <div class='col-md-4'>
-        <h2 class='text-center' id="subtitle" style="font-weight: 300 !important"> I design and develop web applications to help you achieve your goals</h2>
+        <h1 class='text-center' id="mainTitle" style="font-weight: 300 !important"> I design and develop web applications to help you achieve your goals</h1>
+        &nbsp; <p />
+        <hr 4 />
     </div>
 </div>
 
 
-&nbsp; <p />
+
 &nbsp; <p />
 <div class='row'>
     <div class='col-md-4'>
@@ -46,29 +38,10 @@
     &nbsp; <p />
     <div class='container text-center'>
         <div class='row'>
-            <h2 style="font-weight: 300 !important">The Process</h2>
+            <h2 id="subTitle" style="font-weight: 300 !important">The Process</h2>
         </div>
     </div>
     &nbsp; <p />
     &nbsp; <p />
     &nbsp; <p />
 </div>
-<script> var textWrapper = document.querySelector('.ml1 .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    
-    anime.timeline({loop: true})
-      .add({
-        targets: '.ml1 .letter',
-        scale: [0.3,1],
-        opacity: [0,1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 600,
-        delay: (el, i) => 70 * (i+1)
-      }).add({
-        targets: '.ml1',
-        opacity: 0,
-        duration: 100,
-        easing: "easeOutExpo",
-        delay: 90000
-      });</script>
