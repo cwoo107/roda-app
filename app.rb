@@ -2,10 +2,12 @@ require "roda"
 
 class Myapp < Roda
   plugin :static, ["/images", "/css", "/js"]
+  plugin :public, css: 'app.scss', js: 'app.js'
   plugin :render
   plugin :head
 
   route do |r|
+    r.public
     r.root do
         view("home")
     end
