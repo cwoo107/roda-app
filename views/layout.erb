@@ -122,6 +122,34 @@ h3 > a:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+h2 > a {
+  position: relative;
+  color: #F5F5F5;
+  text-decoration: none !important;
+}
+
+h2 > a:hover {
+  color: #F5F5F5;
+}
+h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F5F5F5;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+h2 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 #form {
     background-image: linear-gradient(to bottom right, #F5F5F5, white);
     box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
