@@ -85,6 +85,42 @@
 </html>
 
 <style>
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #444;
+      color: #e4e4e4;
+    }
+    .inverted-img {
+      filter: grayscale(30%);
+      filter: invert(90%);
+    }
+    h1{
+      color: #f0eded;
+    }
+    h2{
+      color: #f0eded;
+    }
+    h3{
+      color: #f0eded;
+    }
+    h4{
+      color: #f0eded;
+    }
+    p{
+      color: #f0eded;
+    }
+    p > a {
+      color: #e39777;
+    }
+    #form {
+      background-image: linear-gradient(to bottom right, #adb5bd, #adb5bd) !important;
+    }
+    .form-control {
+      background-color: #ced4da;
+      color: #444;
+      border-color: #ced4da;
+    }
+  }
 body{
     color: #303030;
 }
